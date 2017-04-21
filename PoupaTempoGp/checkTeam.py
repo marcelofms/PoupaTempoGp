@@ -40,15 +40,18 @@ def show_producao_per_recurso(dados_prod):
             for idx, i_prod in df_prods.iterrows():
                 esforco_total += calc_duracao_tarefa(i_prod['Data de início'], i_prod['Data de fim'])
 
-            df_valores_fase.append({'Projeto': i_fase['Projeto'],
+            df_valores_fase = df_valores_fase.append({'Projeto': i_fase['Projeto'],
                                     'Fase': index,
                                     'Esforco': esforco_total,
                                     'Valor': custo_folha,
                                     'Entrega': i_fase['Data de fim']
                                     }, ignore_index=True)
-
+   
+    df_valores_fase.fillna(0, inplace=True)
+    
     # busca todos os recursos que figuram no planejamento
     df_recursos = dados_prod.loc[dados_prod['Tipo'] == 'Produto']  # apenas produtos para identificar a atribuição
+        
     for id_rec, rec in df_recursos.groupby(['Atribuído a']):
         # busca todos os produtos do recurso
         df_prod_rec = dados_prod.loc[(dados_prod['Tipo'] == 'Produto') &
@@ -60,6 +63,7 @@ def show_producao_per_recurso(dados_prod):
             for id_prd, prds in df_prod_rec.iterrows():
                 esforco_prod = calc_duracao_tarefa(prds['Data de início'], prds['Data de fim'])
                 df_fase_prod = df_valores_fase.loc[df_valores_fase['Fase'] == prds['Tarefa principal']]
+                
                 for indx, fs in df_fase_prod.iterrows():
                     vlr_prod += (esforco_prod / df_fase_prod['Esforco']) * fs['Valor']
 
@@ -87,6 +91,9 @@ def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
         duracao_dias = 1
     else:
         duracao_dias = 0
+
+    if not str(duracao_dias).isnumeric:
+        duracao_dias = 0 
 
     return duracao_dias
 
