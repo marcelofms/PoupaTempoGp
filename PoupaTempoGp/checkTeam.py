@@ -18,8 +18,12 @@ def show_producao_per_recurso(dados_prod):
     # dataframe a ser preenchido
     df_producao_per_recurso = pd.DataFrame(columns=['Recurso',
                                                     'Projeto',
+                                                    'Fase',
+                                                    'Valor_fase',
+                                                    'Esforco_fase',
                                                     'Produto',
-                                                    'Valor',
+                                                    'Valor_produto',
+                                                    'Esforco_produto',
                                                     'Entrega',
                                                     'Status'])
     ####
@@ -29,16 +33,16 @@ def show_producao_per_recurso(dados_prod):
 
     # preenche a relação de fases com os dados necessarios
     for index, i_fase in df_fases.iterrows():
-        # calcula valor da fase
+        ''' calcula valor da fase '''
         custo_folha = dados_prod.loc[i_fase['Tarefa principal'], 'Valor da NF-e'] * float(str(i_fase['Percentual da Fase']).replace(',', '.'))
 
-        # Calcula esforço total (soma do esforço dos produtos da fase)
+        ''' Calcula esforço total (soma do esforço dos produtos da fase) '''
         df_prods = dados_prod.loc[(dados_prod['Tipo'] == 'Produto') & (dados_prod['Tarefa principal'] == index)] 
         esforco_total = 0
 
         if not df_prods.empty:
             for idx, i_prod in df_prods.iterrows():
-                esforco_total += calc_duracao_tarefa(i_prod['Data de início'], i_prod['Data de fim'])
+                esforco_total += int(calc_duracao_tarefa(i_prod['Data de início'], i_prod['Data de fim']))
 
             df_valores_fase = df_valores_fase.append({'Projeto': i_fase['Projeto'],
                                     'Fase': index,
@@ -49,40 +53,66 @@ def show_producao_per_recurso(dados_prod):
    
     df_valores_fase.fillna(0, inplace=True)
     
-    # busca todos os recursos que figuram no planejamento
+    
+    ''' busca todos os recursos que figuram no planejamento '''
     df_recursos = dados_prod.loc[dados_prod['Tipo'] == 'Produto']  # apenas produtos para identificar a atribuição
         
     for id_rec, rec in df_recursos.groupby(['Atribuído a']):
-        # busca todos os produtos do recurso
-        df_prod_rec = dados_prod.loc[(dados_prod['Tipo'] == 'Produto') &
+        ''' busca todos os produtos do recurso '''
+        df_prod_rec = dados_prod.loc[(dados_prod['Tipo'].isin(['Produto','Atividade'])) &
                                      (dados_prod['Atribuído a'] == id_rec)]
-        # Apura o valor proporcional de cada produto
-        # TODO: tirar o bug de valor zerado
+
+        ''' Apura o valor proporcional de cada produto '''
+        
         vlr_prod = 0
         if not df_prod_rec.empty:
             for id_prd, prds in df_prod_rec.iterrows():
                 esforco_prod = calc_duracao_tarefa(prds['Data de início'], prds['Data de fim'])
+                
                 df_fase_prod = df_valores_fase.loc[df_valores_fase['Fase'] == prds['Tarefa principal']]
                 
-                for indx, fs in df_fase_prod.iterrows():
-                    vlr_prod += (esforco_prod / df_fase_prod['Esforco']) * fs['Valor']
+                if not df_fase_prod.empty:
+                    esf_fase = 0
+                    val_fase = 0
+                    for indx, fs in df_fase_prod.iterrows():
+                        esf_fase  += fs['Esforco']
+                        val_fase += fs['Valor']
 
-                df_producao_per_recurso = df_producao_per_recurso.append({'Recurso': id_rec,
-                                            'Projeto': prds['Projeto'],
-                                            'Produto': id_prd,
-                                            'Valor': vlr_prod,
-                                            'Entrega': prds['Data de fim'],
-                                            'Status': prds['Estado']
-                                            }, ignore_index=True)
+                    vlr_prod = (esforco_prod / esf_fase) * val_fase
 
-    df_producao_per_recurso.to_csv(str(get_path_output()) + '\producao_recursos.csv', sep=';')
+                    df_producao_per_recurso = df_producao_per_recurso.append({'Recurso': id_rec,
+                                                'Projeto': prds['Projeto'],
+                                                'Fase':prds['Tarefa principal'],
+                                                'Valor_fase': "{0:.2f}".format(val_fase),
+                                                'Esforco_fase': esf_fase,
+                                                'Produto': id_prd,
+                                                'Valor_produto': "{0:.2f}".format(vlr_prod),
+                                                'Esforco_produto': esforco_prod,
+                                                'Entrega': prds['Data de fim'],
+                                                'Status': prds['Estado']
+                                                }, ignore_index=True)
+    
+    ''' Publica produção por recurso detalhada '''
+    df_producao_per_recurso.to_csv(str(get_path_output()) + '\producao_recursos_detalhe.csv', sep=';')
+
+    ''' versão agrupada dos dados '''
+    publica_prod_consolidada(df_producao_per_recurso)
+
+
+def publica_prod_consolidada(df_producao):
+    print('Consolidando dados...')
+    df_periodos = df_producao['Entrega']
+    df_periodos.apply(lambda d: str(str(d.year) + '-' + str(d.month)))
+    df_producao = pd.concat([df_produção,df_periodos], axis=1)
+    # TODO: testar consolidação
+    df_producao.to_csv(str(get_path_output()) + '\prod_rec_consolid.csv', sep=';')
 
 
 def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
     if ((str(dt_ini_tar) and str(dt_fim_tar)) and
         (str(dt_fim_tar) != 'NaN') and
         (str(dt_fim_tar) != 'NaN') and
-        (str(dt_fim_tar) != 'NaT') and
+        (str(dt_ini_tar) != 'NaT') and
         (str(dt_fim_tar) != 'NaT')
     ):
         dti_dur_tarefa = pd.bdate_range(dt_ini_tar, dt_fim_tar)

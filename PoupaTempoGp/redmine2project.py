@@ -29,9 +29,7 @@ def main(argv):
     print(':::Fim da Execução:::')
 
 
-'''
----------------------------------------------------------------------------------
-'''
+
 
 def get_dados_redmine(arquivo):
     '''
@@ -70,18 +68,16 @@ def get_dados_redmine(arquivo):
     return meus_dados
 
 
-'''
----------------------------------------------------------------------------------
-'''
+
 
 
 def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
     if (
-                            (str(dt_ini_tar) and str(dt_fim_tar)) and
-                            (str(dt_fim_tar) != 'NaN') and
-                        (str(dt_fim_tar) != 'NaN') and
-                    (str(dt_fim_tar) != 'NaT') and
-                (str(dt_fim_tar) != 'NaT')
+        (str(dt_ini_tar) and str(dt_fim_tar)) and
+        (str(dt_fim_tar) != 'NaN') and
+        (str(dt_fim_tar) != 'NaN') and
+        (str(dt_ini_tar) != 'NaT') and
+        (str(dt_fim_tar) != 'NaT')
     ):
         dti_dur_tarefa = pd.bdate_range(dt_ini_tar, dt_fim_tar)
         duracao_dias = dti_dur_tarefa.size
@@ -93,9 +89,7 @@ def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
     return duracao_dias
 
 
-'''
----------------------------------------------------------------------------------
-'''
+
 
 
 def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
