@@ -4,7 +4,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ca88a4f6-b871-4dac-82d5-b47c75b2ddc8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PoupaTempoGp.py</StartupFile>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PoupaTempoGp.py" />
+    <Compile Include="checkTeam.py" />
+    <Compile Include="redmine2project.py" />
+    <Compile Include="showMoney.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
