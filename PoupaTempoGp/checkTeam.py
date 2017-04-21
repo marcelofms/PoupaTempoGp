@@ -30,11 +30,10 @@ def show_producao_per_recurso(dados_prod):
     # preenche a relação de fases com os dados necessarios
     for index, i_fase in df_fases.iterrows():
         # calcula valor da fase
-        custo_folha = dados_prod.loc[i_fase['Tarefa principal'], 'Valor da NF-e'] * float(
-            str(i_fase['Percentual da Fase']).replace(',', '.'))
+        custo_folha = dados_prod.loc[i_fase['Tarefa principal'], 'Valor da NF-e'] * float(str(i_fase['Percentual da Fase']).replace(',', '.'))
 
         # Calcula esforço total (soma do esforço dos produtos da fase)
-        df_prods = dados_prod.loc[(dados_prod['Tipo'] == 'Produto') & (dados_prod['Tarefa principal'] == index)]
+        df_prods = dados_prod.loc[(dados_prod['Tipo'] == 'Produto') & (dados_prod['Tarefa principal'] == index)] 
         esforco_total = 0
 
         if not df_prods.empty:

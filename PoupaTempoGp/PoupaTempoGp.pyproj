@@ -4,14 +4,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ca88a4f6-b871-4dac-82d5-b47c75b2ddc8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>checkTeam.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>PoupaTempoGp</Name>
     <RootNamespace>PoupaTempoGp</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>D:\marce\Projetos\PoupaTempoGp\issues.csv D:\marce\Projetos\</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
