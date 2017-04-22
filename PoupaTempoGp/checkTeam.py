@@ -101,11 +101,45 @@ def show_producao_per_recurso(dados_prod):
 
 def publica_prod_consolidada(df_producao):
     print('Consolidando dados...')
-    df_periodos = df_producao['Entrega']
-    df_periodos.apply(lambda d: str(str(d.year) + '-' + str(d.month)))
-    df_producao = pd.concat([df_produção,df_periodos], axis=1)
+    
+    df_periodos = pd.DataFrame(columns=['Periodo_entrega'])
+    df_periodos['Periodo_entrega'] = df_producao['Entrega'].apply(lambda d: str(str(d.year) + '-' + str(d.month)))
+    df_producao = pd.concat([df_producao,df_periodos], axis=1)
+
+    ''' cria registro consolidado '''
+    new_columns = ['Recurso', 'Projeto', 'Periodo_entrega', 'Valor', 'Status']
+    dados_consolid = pd.DataFrame(columns=new_columns)
+
+    ''' Formata status dos itens de produção '''
+    df_producao['Status'] = df_producao['Status'].apply(lambda s: 'Realizado' if s == 'Concluída' else 'Previsto')
+
+    # consolida os valores por periodo
+    for item, linha in df_producao.groupby(['Recurso', 'Projeto', 'Periodo_entrega', 'Status']):
+        # filtra os dados do projeto/periodo
+
+        df_itens = df_producao.loc[(df_producao["Recurso"] == item[0]) & 
+                                   (df_producao["Projeto"] == item[1]) & 
+                                   (df_producao["Periodo_entrega"] == item[2]) & 
+                                   (df_producao["Status"] == item[3])]
+
+        val_consolidado = 0
+        for index, it_periodo in df_itens.iterrows():
+            val_consolidado += (float(it_periodo['Valor_produto'])*100)
+
+        # preenche o dataframe
+        dados_consolid = dados_consolid.append({'Recurso': item[0],
+                                                'Projeto': item[1],
+                                                'Periodo_entrega': item[2],
+                                                'Valor': val_consolidado/100,
+                                                'Status': item[3]
+        }, ignore_index=True)
+
+    # convert/pivot para plotagem
+    # dados_consolid = dados_consolid.pivot(index='Projeto', columns='Periodo', values='Valor')
+    dados_consolid.fillna(0, inplace=True)    
+    
     # TODO: testar consolidação da produção individual
-    df_producao.to_csv(str(get_path_output()) + '\prod_rec_consolid.csv', sep=';')
+    dados_consolid.to_csv(str(get_path_output()) + '\prod_rec_consolid.csv', sep=';')
 
 
 def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
