@@ -134,12 +134,46 @@ def publica_prod_consolidada(df_producao):
                                                 'Status': item[3]
         }, ignore_index=True)
 
-    # convert/pivot para plotagem
-    # dados_consolid = dados_consolid.pivot(index='Projeto', columns='Periodo', values='Valor')
     dados_consolid.fillna(0, inplace=True)    
     
-    # TODO: testar consolidação da produção individual
+    ''' consolidação da produção individual '''
     dados_consolid.to_csv(str(get_path_output()) + '\prod_rec_consolid.csv', sep=';')
+    
+    ''' convert/pivot para plotagem '''
+
+    dados_prod_real = pd.DataFrame(columns=['Recurso', 'Periodo_entrega', 'Valor'])
+    dados_prod_prev = pd.DataFrame(columns=['Recurso', 'Periodo_entrega', 'Valor'])
+
+    for ix, it in dados_consolid.groupby(['Recurso','Periodo_entrega']):
+        vlr_prd_real = 0
+        vlr_prd_prev = 0
+        prod_it = dados_consolid.loc[(dados_consolid['Recurso'] == ix[0]) & 
+                                     (dados_consolid['Periodo_entrega'] == ix[1])]
+        for id_prd, it_prd in prod_it.iterrows():
+            if it_prd['Status'] == 'Realizado':
+               vlr_prd_real += it_prd['Valor']
+            else:
+               vlr_prd_prev += it_prd['Valor']
+
+        dados_prod_real = dados_prod_real.append({'Recurso': ix[0],
+                                                  'Periodo_entrega': ix[1],
+                                                  'Valor': vlr_prd_real
+                                                  }, ignore_index=True)
+        dados_prod_prev = dados_prod_prev.append({'Recurso': ix[0],
+                                                  'Periodo_entrega': ix[1],
+                                                  'Valor': vlr_prd_prev
+                                                  }, ignore_index=True)
+
+    dados_prod_real = dados_prod_real.pivot(index='Recurso', columns='Periodo_entrega', values='Valor')
+    dados_prod_real.fillna(0, inplace=True)
+    dados_prod_real.to_csv(str(get_path_output()) + '\prod_rec_real.csv', sep=';')
+
+    dados_prod_prev = dados_prod_prev.pivot(index='Recurso', columns='Periodo_entrega', values='Valor')
+    dados_prod_prev.fillna(0, inplace=True)
+    dados_prod_prev.to_csv(str(get_path_output()) + '\prod_rec_prev.csv', sep=';')
+    
+    
+
 
 
 def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
@@ -166,7 +200,6 @@ def main(argv):
     print(':::Início da execução:::')
     print('Parametros de execução:', argv)
 
-    # TODO: incluir crítica para número de parâmetros inválido
 
     if str(argv).find('csv'):
         # calcula estatisticas do time

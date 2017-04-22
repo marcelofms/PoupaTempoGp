@@ -14,7 +14,6 @@ def main(argv):
     print(':::Início da execução:::')
     print('Parametros de execução:', sys.argv)
 
-    # TODO: incluir crítica para número de parâmetros inválido
 
     if str(sys.argv).find('csv'):
         meusDados = get_dados_redmine(sys.argv[1])

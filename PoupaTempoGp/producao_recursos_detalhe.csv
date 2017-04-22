@@ -1,0 +1,368 @@
+;Recurso;Projeto;Fase;Valor_fase;Esforco_fase;Produto;Valor_produto;Esforco_produto;Entrega;Status
+0;Almir Arruda Junior;Hemovida Web - Coagulopatias;1429.0;11749.08;17.0;1439.0;2764.49;4.0;2017-05-03;Em andamento
+1;Almir Arruda Junior;Hemovida Web - Coagulopatias;1429.0;11749.08;17.0;1438.0;2764.49;4.0;2017-04-27;Em andamento
+2;Almir Arruda Junior;Hemovida Web - Coagulopatias;1429.0;11749.08;17.0;1437.0;2764.49;4.0;2017-04-21;Em andamento
+3;Almir Arruda Junior;Hemovida Web - Coagulopatias;1429.0;11749.08;17.0;1435.0;2764.49;4.0;2017-04-17;Em andamento
+4;Almir Arruda Junior;Hemovida Web - Coagulopatias;884.0;3916.36;1.0;890.0;3916.36;1.0;2017-04-19;Nova
+5;Almir Arruda Junior;Hemovida Web - Coagulopatias;883.0;19581.80;10.0;889.0;3916.36;2.0;2017-04-18;Nova
+6;Almir Arruda Junior;Hemovida Web - Coagulopatias;883.0;19581.80;10.0;888.0;7832.72;4.0;2017-04-14;Nova
+7;Almir Arruda Junior;Hemovida Web - Coagulopatias;883.0;19581.80;10.0;887.0;7832.72;4.0;2017-04-10;Nova
+8;Almir Arruda Junior;Hemovida Web - Hemoglobinopatias;793.0;5091.27;10.0;801.0;1018.25;2.0;2017-05-24;Nova
+9;Almir Arruda Junior;Hemovida Web - Hemoglobinopatias;793.0;5091.27;10.0;799.0;1527.38;3.0;2017-05-18;Nova
+10;Almir Arruda Junior;Hemovida Web - Hemoglobinopatias;793.0;5091.27;10.0;798.0;1527.38;3.0;2017-05-15;Nova
+11;Almir Arruda Junior;Hemovida Web - Hemoglobinopatias;1643.0;4308.00;8.0;516.0;1615.50;3.0;2017-02-22;Concluída
+12;Almir Arruda Junior;Hemovida Web - Hemoglobinopatias;1711.0;1018.25;6.0;515.0;509.13;3.0;2017-02-22;Concluída
+13;Andréa de Souza da Silva;Hemovida Web - Coagulopatias;2093.0;3916.36;11.0;875.0;712.07;2.0;2017-03-13;Concluída
+14;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;3339.0;3133.09;3.0;3343.0;1044.36;1.0;2017-04-28;Nova
+15;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;3339.0;3133.09;3.0;3341.0;3133.09;3.0;2017-04-27;Nova
+16;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2406.0;388.20;2.0;2017-05-25;Em andamento
+17;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2405.0;194.10;1.0;2017-05-23;Em andamento
+18;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2404.0;388.20;2.0;2017-05-22;Em andamento
+19;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2403.0;388.20;2.0;2017-05-18;Em andamento
+20;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2402.0;194.10;1.0;2017-05-16;Em andamento
+21;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2401.0;194.10;1.0;2017-05-15;Em andamento
+22;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2400.0;194.10;1.0;2017-05-15;Em andamento
+23;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2399.0;388.20;2.0;2017-05-12;Em andamento
+24;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2398.0;194.10;1.0;2017-05-10;Em andamento
+25;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2397.0;194.10;1.0;2017-05-09;Em andamento
+26;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2396.0;194.10;1.0;2017-05-08;Em andamento
+27;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2395.0;388.20;2.0;2017-05-11;Em andamento
+28;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2394.0;194.10;1.0;2017-05-09;Em andamento
+29;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2393.0;194.10;1.0;2017-05-08;Em andamento
+30;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2392.0;194.10;1.0;2017-05-05;Em andamento
+31;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2369.0;388.20;2.0;2017-05-04;Em andamento
+32;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2368.0;194.10;1.0;2017-06-16;Em andamento
+33;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2367.0;388.20;2.0;2017-06-15;Em andamento
+34;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2366.0;194.10;1.0;2017-06-13;Em andamento
+35;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2365.0;194.10;1.0;2017-06-12;Em andamento
+36;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2363.0;194.10;1.0;2017-06-09;Em andamento
+37;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2362.0;388.20;2.0;2017-06-08;Em andamento
+38;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2361.0;194.10;1.0;2017-06-06;Em andamento
+39;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2359.0;194.10;1.0;2017-06-05;Em andamento
+40;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2356.0;194.10;1.0;2017-06-02;Em andamento
+41;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2355.0;194.10;1.0;2017-06-01;Em andamento
+42;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2354.0;194.10;1.0;2017-05-31;Em andamento
+43;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2353.0;194.10;1.0;2017-05-30;Em andamento
+44;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2350.0;194.10;1.0;2017-05-29;Em andamento
+45;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2343.0;388.20;2.0;2017-05-26;Em andamento
+46;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2342.0;194.10;1.0;2017-05-24;Em andamento
+47;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2220.0;7958.04;41.0;2340.0;194.10;1.0;2017-06-02;Em andamento
+48;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2327.0;149.21;1.0;2017-06-01;Concluída
+49;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2307.0;149.21;1.0;2017-05-08;Cancelada
+50;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2293.0;149.21;1.0;2017-04-28;Concluída
+51;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2292.0;149.21;1.0;2017-04-27;Concluída
+52;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2291.0;149.21;1.0;2017-04-26;Concluída
+53;Daniele Regina da Silveira Cardoso;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2216.0;7958.04;5.0;2268.0;3183.22;2.0;2017-04-18;Concluída
+54;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1648.0;391.64;3.0;1502.0;130.55;1.0;2017-03-23;Concluída
+55;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1746.0;391.64;4.0;1101.0;97.91;1.0;2017-03-16;Concluída
+56;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1746.0;391.64;4.0;1085.0;293.73;3.0;2017-03-17;Concluída
+57;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1066.0;2271.49;1.0;1084.0;2271.49;1.0;2017-05-30;Nova
+58;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1083.0;1774.60;5.0;2017-05-29;Nova
+59;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1076.0;1064.76;3.0;2017-04-19;Nova
+60;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1075.0;354.92;1.0;2017-04-14;Nova
+61;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1063.0;2271.49;2.0;1068.0;1135.74;1.0;2017-03-15;Concluída
+62;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1063.0;2271.49;2.0;1067.0;1135.74;1.0;2017-03-15;Concluída
+63;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;957.0;4033.85;1.0;969.0;4033.85;1.0;2017-04-19;Nova
+64;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;956.0;24203.11;17.0;968.0;2847.42;2.0;2017-04-18;Nova
+65;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;956.0;24203.11;17.0;965.0;4271.14;3.0;2017-04-04;Nova
+66;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;956.0;24203.11;17.0;964.0;2847.42;2.0;2017-03-30;Nova
+67;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;956.0;24203.11;17.0;963.0;2847.42;2.0;2017-03-28;Nova
+68;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;955.0;12101.55;5.0;962.0;2420.31;1.0;2017-03-24;Concluída
+69;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;955.0;12101.55;5.0;961.0;2420.31;1.0;2017-03-23;Concluída
+70;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;955.0;12101.55;5.0;960.0;2420.31;1.0;2017-03-22;Concluída
+71;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;955.0;12101.55;5.0;959.0;2420.31;1.0;2017-03-21;Concluída
+72;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;955.0;12101.55;5.0;958.0;2420.31;1.0;2017-03-20;Concluída
+73;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1648.0;391.64;3.0;880.0;261.09;2.0;2017-03-15;Concluída
+74;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1747.0;587.45;4.0;563.0;293.73;2.0;2017-02-23;Concluída
+75;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1747.0;587.45;4.0;510.0;293.73;2.0;2017-02-21;Concluída
+76;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1748.0;58.75;3.0;470.0;19.58;1.0;2017-02-17;Concluída
+77;Daniele Regina da Silveira Cardoso;BFA - Programa Bolsa Família ;1748.0;58.75;3.0;424.0;39.16;2.0;2017-02-17;Concluída
+78;Izabela Reis de Souza;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1721.0;58.75;2.0;1723.0;29.37;1.0;2017-03-30;Concluída
+79;Izabela Reis de Souza;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1721.0;58.75;2.0;1722.0;29.37;1.0;2017-03-30;Concluída
+80;Izabela Reis de Souza;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1406.0;1958.18;2.0;1408.0;979.09;1.0;2017-03-22;Concluída
+81;Izabela Reis de Souza;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1406.0;1958.18;2.0;1407.0;979.09;1.0;2017-03-22;Concluída
+82;Izabela Reis de Souza;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;434.0;1057.42;2.0;435.0;528.71;1.0;2017-02-23;Concluída
+83;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2241.0;4774.83;3.0;2475.0;1591.61;1.0;2017-05-24;Nova
+84;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2241.0;4774.83;3.0;2474.0;1591.61;1.0;2017-05-23;Nova
+85;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2241.0;4774.83;3.0;2473.0;1591.61;1.0;2017-05-22;Nova
+86;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2240.0;1591.61;4.0;2472.0;795.80;2.0;2017-05-23;Nova
+87;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2240.0;1591.61;4.0;2471.0;795.80;2.0;2017-05-19;Nova
+88;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2235.0;7958.04;4.0;2457.0;3979.02;2.0;2017-05-18;Nova
+89;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2235.0;7958.04;4.0;2456.0;3979.02;2.0;2017-05-16;Nova
+90;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2234.0;1591.61;1.0;2455.0;1591.61;1.0;2017-05-15;Nova
+91;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2232.0;4774.83;7.0;2452.0;1364.24;2.0;2017-05-15;Nova
+92;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2232.0;4774.83;7.0;2451.0;1364.24;2.0;2017-05-11;Nova
+93;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2232.0;4774.83;7.0;2450.0;1364.24;2.0;2017-05-09;Nova
+94;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2232.0;4774.83;7.0;2449.0;682.12;1.0;2017-05-05;Nova
+95;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2231.0;4774.83;3.0;2434.0;1591.61;1.0;2017-05-08;Nova
+96;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2231.0;4774.83;3.0;2433.0;1591.61;1.0;2017-05-05;Nova
+97;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2231.0;4774.83;3.0;2432.0;1591.61;1.0;2017-05-04;Nova
+98;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2223.0;7958.04;8.0;2415.0;1989.51;2.0;2017-05-08;Nova
+99;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2223.0;7958.04;8.0;2414.0;1989.51;2.0;2017-05-04;Nova
+100;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2223.0;7958.04;8.0;2413.0;1989.51;2.0;2017-05-02;Nova
+101;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2223.0;7958.04;8.0;2412.0;1989.51;2.0;2017-04-28;Nova
+102;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2222.0;1591.61;3.0;2411.0;530.54;1.0;2017-05-25;Nova
+103;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2222.0;1591.61;3.0;2410.0;530.54;1.0;2017-05-24;Nova
+104;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2222.0;1591.61;3.0;2409.0;530.54;1.0;2017-05-23;Nova
+105;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2267.0;1591.61;2.0;2017-05-22;Em andamento
+106;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2266.0;1591.61;2.0;2017-05-18;Em andamento
+107;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2265.0;1591.61;2.0;2017-05-16;Em andamento
+108;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2264.0;1591.61;2.0;2017-05-12;Em andamento
+109;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2263.0;1591.61;2.0;2017-05-10;Em andamento
+110;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2262.0;1591.61;2.0;2017-05-08;Em andamento
+111;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2260.0;1591.61;2.0;2017-05-04;Em andamento
+112;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2259.0;1591.61;2.0;2017-05-02;Em andamento
+113;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2257.0;1591.61;2.0;2017-04-28;Em andamento
+114;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2215.0;15916.09;20.0;2256.0;1591.61;2.0;2017-04-26;Em andamento
+115;José Victor de Souza Machado;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1777.0;58.75;1.0;1788.0;58.75;1.0;2017-04-06;Em andamento
+116;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2326.0;149.21;1.0;2017-05-31;Concluída
+117;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2325.0;149.21;1.0;2017-05-30;Concluída
+118;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2323.0;149.21;1.0;2017-05-29;Concluída
+119;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2321.0;149.21;1.0;2017-05-26;Concluída
+120;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2320.0;149.21;1.0;2017-05-25;Concluída
+121;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2319.0;149.21;1.0;2017-05-24;Concluída
+122;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2318.0;149.21;1.0;2017-05-23;Concluída
+123;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2317.0;149.21;1.0;2017-05-22;Concluída
+124;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2316.0;149.21;1.0;2017-05-19;Concluída
+125;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2315.0;149.21;1.0;2017-05-18;Concluída
+126;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2314.0;149.21;1.0;2017-05-17;Concluída
+127;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2313.0;149.21;1.0;2017-05-16;Concluída
+128;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2312.0;149.21;1.0;2017-05-15;Concluída
+129;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2311.0;149.21;1.0;2017-05-12;Concluída
+130;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2310.0;149.21;1.0;2017-05-11;Concluída
+131;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2309.0;149.21;1.0;2017-05-10;Concluída
+132;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2308.0;149.21;1.0;2017-05-09;Concluída
+133;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2304.0;149.21;1.0;2017-05-05;Concluída
+134;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2303.0;149.21;1.0;2017-05-04;Concluída
+135;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2301.0;149.21;1.0;2017-05-03;Concluída
+136;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2299.0;149.21;1.0;2017-05-02;Concluída
+137;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2295.0;149.21;1.0;2017-05-01;Concluída
+138;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2290.0;149.21;1.0;2017-04-25;Concluída
+139;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2288.0;149.21;1.0;2017-04-24;Concluída
+140;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2287.0;149.21;1.0;2017-04-21;Concluída
+141;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2282.0;149.21;1.0;2017-04-20;Concluída
+142;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2218.0;4774.83;32.0;2280.0;149.21;1.0;2017-04-19;Concluída
+143;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2253.0;723.46;1.0;2017-04-24;Concluída
+144;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2252.0;723.46;1.0;2017-04-21;Concluída
+145;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2251.0;723.46;1.0;2017-04-20;Concluída
+146;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2250.0;723.46;1.0;2017-04-19;Concluída
+147;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2249.0;723.46;1.0;2017-04-18;Concluída
+148;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2248.0;723.46;1.0;2017-04-17;Concluída
+149;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2247.0;723.46;1.0;2017-04-14;Concluída
+150;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2246.0;723.46;1.0;2017-04-13;Concluída
+151;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2245.0;723.46;1.0;2017-04-12;Concluída
+152;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2244.0;723.46;1.0;2017-04-11;Concluída
+153;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2179.0;0.00;4.0;2181.0;0.00;3.0;2017-04-07;Concluída
+154;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2176.0;0.00;2.0;2178.0;0.00;1.0;2017-04-06;Concluída
+155;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2176.0;0.00;2.0;2177.0;0.00;1.0;2017-04-05;Concluída
+156;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;2166.0;3847.82;2.0;2017-04-05;Concluída
+157;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;2165.0;3847.82;2.0;2017-04-05;Concluída
+158;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2118.0;783.27;4.0;2121.0;391.64;2.0;2017-04-05;Concluída
+159;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1698.0;234.98;7.0;2092.0;134.28;4.0;2017-04-07;Concluída
+160;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1776.0;293.73;2.0;1787.0;146.86;1.0;2017-04-05;Concluída
+161;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1784.0;391.64;1.0;1785.0;391.64;1.0;2017-04-06;Concluída
+162;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1781.0;3133.09;2.0;1783.0;1566.54;1.0;2017-04-04;Concluída
+163;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1781.0;3133.09;2.0;1782.0;1566.54;1.0;2017-04-03;Concluída
+164;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1776.0;293.73;2.0;1779.0;146.86;1.0;2017-04-04;Concluída
+165;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1775.0;176.24;1.0;1778.0;176.24;1.0;2017-04-03;Concluída
+166;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1768.0;9790.90;2.0;1773.0;4895.45;1.0;2017-04-07;Concluída
+167;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1768.0;9790.90;2.0;1772.0;4895.45;1.0;2017-04-06;Concluída
+168;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1767.0;5874.54;1.0;1771.0;5874.54;1.0;2017-04-05;Concluída
+169;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1760.0;9790.90;4.0;1765.0;2447.72;1.0;2017-04-07;Concluída
+170;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1760.0;9790.90;4.0;1763.0;2447.72;1.0;2017-04-06;Concluída
+171;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1760.0;9790.90;4.0;1762.0;2447.72;1.0;2017-04-05;Concluída
+172;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1760.0;9790.90;4.0;1761.0;2447.72;1.0;2017-04-04;Concluída
+173;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1756.0;5874.54;3.0;1759.0;1958.18;1.0;2017-04-05;Concluída
+174;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1756.0;5874.54;3.0;1758.0;1958.18;1.0;2017-04-04;Concluída
+175;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1756.0;5874.54;3.0;1757.0;1958.18;1.0;2017-04-03;Concluída
+176;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;1643.0;4308.00;8.0;1645.0;538.50;1.0;2017-03-29;Concluída
+177;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;1643.0;4308.00;8.0;1644.0;538.50;1.0;2017-03-29;Concluída
+178;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;2094.0;1821.11;6.0;1514.0;910.55;3.0;2017-03-28;Concluída
+179;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1704.0;0.00;10.0;1503.0;0.00;3.0;2017-03-28;Concluída
+180;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1428.0;7049.45;4.0;1434.0;1762.36;1.0;2017-04-11;Concluída
+181;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1428.0;7049.45;4.0;1433.0;1762.36;1.0;2017-04-10;Concluída
+182;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1428.0;7049.45;4.0;1432.0;1762.36;1.0;2017-04-07;Concluída
+183;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1428.0;7049.45;4.0;1431.0;1762.36;1.0;2017-04-06;Concluída
+184;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;2094.0;1821.11;6.0;1323.0;910.55;3.0;2017-03-29;Concluída
+185;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1161.0;3847.82;2.0;2017-03-18;Concluída
+186;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1159.0;3847.82;2.0;2017-03-18;Concluída
+187;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1064.0;6814.47;6.0;1074.0;1135.74;1.0;2017-04-13;Concluída
+188;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1064.0;6814.47;6.0;1073.0;1135.74;1.0;2017-04-12;Concluída
+189;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1064.0;6814.47;6.0;1072.0;1135.74;1.0;2017-04-11;Concluída
+190;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1064.0;6814.47;6.0;1071.0;1135.74;1.0;2017-04-10;Concluída
+191;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1064.0;6814.47;6.0;1070.0;1135.74;1.0;2017-04-07;Concluída
+192;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;1064.0;6814.47;6.0;1069.0;1135.74;1.0;2017-04-06;Concluída
+193;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;2099.0;0.00;5.0;874.0;0.00;1.0;2017-03-15;Concluída
+194;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;2101.0;0.00;1.0;873.0;0.00;1.0;2017-03-14;Concluída
+195;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;2102.0;0.00;1.0;872.0;0.00;1.0;2017-03-13;Concluída
+196;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;845.0;0.00;1.0;848.0;0.00;1.0;2017-03-14;Concluída
+197;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2108.0;0.00;1.0;843.0;0.00;1.0;2017-03-15;Concluída
+198;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2106.0;0.00;6.0;841.0;0.00;1.0;2017-03-14;Concluída
+199;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2106.0;0.00;6.0;840.0;0.00;5.0;2017-03-13;Concluída
+200;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;794.0;1018.25;1.0;802.0;1018.25;1.0;2017-05-25;Nova
+201;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;710.0;1409.89;2.0;722.0;1409.89;2.0;2017-03-31;Nova
+202;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;709.0;7049.45;10.0;720.0;2114.84;3.0;2017-03-29;Concluída
+203;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;709.0;7049.45;10.0;719.0;2114.84;3.0;2017-03-24;Concluída
+204;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;709.0;7049.45;10.0;718.0;1409.89;2.0;2017-03-21;Concluída
+205;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;709.0;7049.45;10.0;717.0;1409.89;2.0;2017-03-17;Concluída
+206;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;694.0;4308.00;1.0;707.0;4308.00;1.0;2017-04-11;Nova
+207;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;692.0;12923.99;6.0;699.0;4308.00;2.0;2017-04-10;Concluída
+208;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;692.0;12923.99;6.0;696.0;4308.00;2.0;2017-04-05;Concluída
+209;Marcelo Fernandes Marques dos Santos;Hemovida Web - Hemoglobinopatias;692.0;12923.99;6.0;695.0;2154.00;1.0;2017-04-03;Concluída
+210;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;577.0;587.45;1.0;578.0;587.45;1.0;2017-03-07;Concluída
+211;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;574.0;4699.63;3.0;576.0;1566.54;1.0;2017-03-06;Concluída
+212;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;574.0;4699.63;3.0;575.0;3133.09;2.0;2017-03-03;Concluída
+213;Marcelo Fernandes Marques dos Santos;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2113.0;391.64;4.0;506.0;391.64;4.0;2017-02-23;Concluída
+214;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;474.0;58.75;1.0;475.0;58.75;1.0;2017-02-22;Concluída
+215;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;471.0;469.96;2.0;473.0;234.98;1.0;2017-02-21;Concluída
+216;Marcelo Fernandes Marques dos Santos;BFA - Programa Bolsa Família ;471.0;469.96;2.0;472.0;234.98;1.0;2017-02-20;Concluída
+217;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;468.0;704.95;1.0;469.0;704.95;1.0;2017-02-23;Concluída
+218;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;562.0;4229.67;2.0;467.0;2114.84;1.0;2017-02-22;Concluída
+219;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;562.0;4229.67;2.0;466.0;2114.84;1.0;2017-02-21;Concluída
+220;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;464.0;2114.84;1.0;465.0;2114.84;1.0;2017-02-20;Concluída
+221;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;434.0;1057.42;2.0;436.0;528.71;1.0;2017-02-24;Concluída
+222;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;430.0;8459.34;4.0;433.0;2114.83;1.0;2017-02-23;Concluída
+223;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;430.0;8459.34;4.0;432.0;4229.67;2.0;2017-02-22;Concluída
+224;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;430.0;8459.34;4.0;431.0;2114.83;1.0;2017-02-20;Concluída
+225;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;354.0;1057.42;10.0;357.0;634.45;6.0;2017-02-27;Concluída
+226;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;354.0;1057.42;10.0;356.0;211.48;2.0;2017-02-17;Concluída
+227;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;354.0;1057.42;10.0;355.0;211.48;2.0;2017-02-15;Concluída
+228;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1720.0;0.00;8.0;175.0;0.00;3.0;2017-01-31;Concluída
+229;Marcelo Fernandes Marques dos Santos;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;157.0;391.64;6.0;167.0;261.09;4.0;2017-02-01;Concluída
+230;Marcelo Fernandes Marques dos Santos;Hemovida Web - Coagulopatias;1704.0;0.00;10.0;101.0;0.00;7.0;2017-01-27;Concluída
+231;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;3230.0;0.00;1.0;3231.0;0.00;1.0;2017-04-20;Nova
+232;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;3228.0;0.00;1.0;3229.0;0.00;1.0;2017-04-19;Nova
+233;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2607.0;1879.86;1.0;2610.0;1879.86;1.0;2017-04-13;Concluída
+234;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2607.0;1879.86;1.0;2609.0;1879.86;1.0;2017-04-12;Concluída
+235;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;2099.0;0.00;5.0;2100.0;0.00;4.0;2017-04-07;Concluída
+236;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1751.0;234.98;1.0;1755.0;234.98;1.0;2017-04-27;Nova
+237;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1750.0;1174.91;5.0;1754.0;234.98;1.0;2017-04-26;Nova
+238;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1750.0;1174.91;5.0;1753.0;939.93;4.0;2017-04-25;Nova
+239;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1749.0;704.95;1.0;1752.0;704.95;1.0;2017-04-19;Em andamento
+240;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1541.0;244.77;19.0;1542.0;12.88;1.0;2017-03-27;Concluída
+241;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1430.0;2349.82;1.0;1441.0;2349.82;1.0;2017-05-05;Nova
+242;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1429.0;11749.08;17.0;1440.0;691.12;1.0;2017-05-04;Nova
+243;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2091.0;2349.82;4.0;1427.0;587.45;1.0;2017-03-23;Concluída
+244;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;882.0;11749.08;2.0;886.0;5874.54;1.0;2017-04-04;Em andamento
+245;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;882.0;11749.08;2.0;885.0;5874.54;1.0;2017-04-03;Concluída
+246;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;793.0;5091.27;10.0;800.0;1018.25;2.0;2017-05-22;Concluída
+247;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;792.0;3054.76;5.0;797.0;1221.90;2.0;2017-05-10;Concluída
+248;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;792.0;3054.76;5.0;796.0;1221.90;2.0;2017-05-08;Em andamento
+249;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;792.0;3054.76;5.0;795.0;610.95;1.0;2017-05-04;Em andamento
+250;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2093.0;3916.36;11.0;774.0;1424.13;4.0;2017-03-10;Concluída
+251;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1705.0;234.98;8.0;773.0;88.12;3.0;2017-03-09;Concluída
+252;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2097.0;4229.67;6.0;715.0;704.94;1.0;2017-03-15;Concluída
+253;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2097.0;4229.67;6.0;714.0;1409.89;2.0;2017-03-14;Concluída
+254;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2097.0;4229.67;6.0;713.0;1409.89;2.0;2017-03-10;Concluída
+255;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2097.0;4229.67;6.0;712.0;704.94;1.0;2017-03-08;Concluída
+256;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;693.0;21539.98;10.0;706.0;4308.00;2.0;2017-04-10;Em andamento
+257;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;693.0;21539.98;10.0;705.0;6461.99;3.0;2017-04-06;Cancelada
+258;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;693.0;21539.98;10.0;704.0;4308.00;2.0;2017-04-03;Em andamento
+259;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;693.0;21539.98;10.0;703.0;6461.99;3.0;2017-03-30;Em andamento
+260;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;692.0;12923.99;6.0;697.0;2154.00;1.0;2017-04-06;Cancelada
+261;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2096.0;1409.89;9.0;662.0;626.62;4.0;2017-03-07;Concluída
+262;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;1711.0;1018.25;6.0;661.0;509.13;3.0;2017-03-06;Concluída
+263;Marcos Lázaro Santo;Hemovida Web - Hemoglobinopatias;1643.0;4308.00;8.0;660.0;1615.50;3.0;2017-03-06;Concluída
+264;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1705.0;234.98;8.0;514.0;146.86;5.0;2017-02-24;Concluída
+265;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2093.0;3916.36;11.0;513.0;1780.16;5.0;2017-02-24;Concluída
+266;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2096.0;1409.89;9.0;512.0;783.27;5.0;2017-02-24;Concluída
+267;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;2091.0;2349.82;4.0;511.0;1762.36;3.0;2017-02-22;Concluída
+268;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1541.0;244.77;19.0;164.0;25.77;2.0;2017-01-30;Concluída
+269;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1698.0;234.98;7.0;163.0;100.71;3.0;2017-01-31;Concluída
+270;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1541.0;244.77;19.0;132.0;115.95;9.0;2017-02-03;Concluída
+271;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1703.0;881.18;7.0;104.0;881.18;7.0;2017-01-27;Concluída
+272;Marcos Lázaro Santo;Hemovida Web - Coagulopatias;1541.0;244.77;19.0;103.0;90.18;7.0;2017-01-27;Concluída
+273;Marlanfe Michaelis Rocha de Oliveira;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2217.0;23874.13;19.0;2270.0;22617.60;18.0;2017-05-17;Nova
+274;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1790.0;7578.16;6.0;1798.0;1263.03;1.0;2017-04-11;Em andamento
+275;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1790.0;7578.16;6.0;1797.0;1263.03;1.0;2017-04-28;Em andamento
+276;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1790.0;7578.16;6.0;1793.0;1263.03;1.0;2017-04-24;Em andamento
+277;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1186.0;0.00;3.0;1189.0;0.00;1.0;2017-03-25;Em andamento
+278;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1186.0;0.00;3.0;1188.0;0.00;2.0;2017-03-23;Em andamento
+279;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1162.0;3847.82;2.0;2017-03-18;Concluída
+280;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1157.0;3847.82;2.0;2017-03-18;Concluída
+281;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1153.0;2885.87;2.0;2017-03-18;Concluída
+282;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1148.0;2885.87;2.0;2017-03-18;Concluída
+283;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1745.0;7695.65;4.0;1141.0;1923.91;1.0;2017-03-16;Concluída
+284;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1745.0;7695.65;4.0;505.0;5771.74;3.0;2017-02-22;Concluída
+285;Marlanfe Michaelis Rocha de Oliveira;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2104.0;0.00;2.0;504.0;0.00;2.0;2017-02-21;Concluída
+286;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1638.0;0.00;3.0;3351.0;0.00;3.0;2017-04-24;Nova
+287;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2238.0;6366.43;10.0;2468.0;1273.29;2.0;2017-06-16;Nova
+288;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2238.0;6366.43;10.0;2467.0;1273.29;2.0;2017-06-14;Nova
+289;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2238.0;6366.43;10.0;2466.0;1273.29;2.0;2017-06-12;Nova
+290;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2238.0;6366.43;10.0;2465.0;1273.29;2.0;2017-06-08;Nova
+291;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2238.0;6366.43;10.0;2464.0;1273.29;2.0;2017-06-12;Nova
+292;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2237.0;1591.61;4.0;2463.0;397.90;1.0;2017-06-07;Nova
+293;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2237.0;1591.61;4.0;2462.0;397.90;1.0;2017-06-06;Nova
+294;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2237.0;1591.61;4.0;2461.0;397.90;1.0;2017-06-05;Nova
+295;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2237.0;1591.61;4.0;2460.0;397.90;1.0;2017-06-02;Nova
+296;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2229.0;4774.83;5.0;2429.0;954.97;1.0;2017-05-31;Nova
+297;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2229.0;4774.83;5.0;2428.0;954.97;1.0;2017-05-30;Nova
+298;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2229.0;4774.83;5.0;2427.0;1909.93;2.0;2017-05-29;Nova
+299;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2229.0;4774.83;5.0;2426.0;954.97;1.0;2017-05-25;Nova
+300;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2228.0;1591.61;3.0;2425.0;530.54;1.0;2017-05-25;Nova
+301;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2228.0;1591.61;3.0;2424.0;530.54;1.0;2017-05-24;Nova
+302;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2228.0;1591.61;3.0;2423.0;530.54;1.0;2017-05-23;Nova
+303;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2226.0;7958.04;3.0;2420.0;2652.68;1.0;2017-05-22;Nova
+304;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2226.0;7958.04;3.0;2419.0;5305.36;2.0;2017-05-19;Nova
+305;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2225.0;1591.61;1.0;2418.0;1591.61;1.0;2017-05-18;Nova
+306;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2217.0;23874.13;19.0;2276.0;1256.53;1.0;2017-05-18;Nova
+307;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2216.0;7958.04;5.0;2269.0;4774.83;3.0;2017-04-21;Em andamento
+308;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;2214.0;7958.04;11.0;2243.0;723.46;1.0;2017-04-10;Concluída
+309;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1769.0;1958.18;1.0;1774.0;1958.18;1.0;2017-04-10;Resolvida
+310;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1764.0;1958.18;1.0;1766.0;1958.18;1.0;2017-04-10;Nova
+311;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1291.0;1958.18;4.0;1294.0;979.09;2.0;2017-03-21;Concluída
+312;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1291.0;1958.18;4.0;1292.0;979.09;2.0;2017-03-21;Concluída
+313;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1724.0;15916.09;9.0;772.0;7073.82;4.0;2017-03-11;Concluída
+314;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;583.0;391.64;1.0;584.0;391.64;1.0;2017-02-27;Concluída
+315;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;580.0;3133.09;2.0;582.0;1566.54;1.0;2017-02-24;Concluída
+316;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;580.0;3133.09;2.0;581.0;1566.54;1.0;2017-02-23;Concluída
+317;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1724.0;15916.09;9.0;509.0;8842.27;5.0;2017-02-25;Concluída
+318;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;1720.0;0.00;8.0;239.0;0.00;5.0;2017-02-09;Concluída
+319;Petronio Alves da Silva;GAL - GERENCIADOR DE AMBIENTE LABORATORIAL;157.0;391.64;6.0;158.0;130.55;2.0;2017-01-27;Concluída
+320;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2591.0;0.00;2.0;3232.0;0.00;1.0;2017-04-25;Nova
+321;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2591.0;0.00;2.0;2592.0;0.00;1.0;2017-04-15;Concluída
+322;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2120.0;783.27;2.0;2170.0;391.64;1.0;2017-04-10;Em andamento
+323;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2120.0;783.27;2.0;2169.0;391.64;1.0;2017-04-10;Em andamento
+324;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2119.0;6266.18;4.0;2168.0;3133.09;2.0;2017-04-11;Em andamento
+325;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2119.0;6266.18;4.0;2167.0;3133.09;2.0;2017-04-07;Em andamento
+326;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2118.0;783.27;4.0;2122.0;391.64;2.0;2017-04-07;Em andamento
+327;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1792.0;2526.05;1.0;1811.0;2526.05;1.0;2017-05-01;Nova
+328;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1809.0;971.56;1.0;2017-04-28;Nova
+329;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1808.0;1943.12;2.0;2017-04-27;Nova
+330;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1806.0;1943.12;2.0;2017-04-25;Nova
+331;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1805.0;971.56;1.0;2017-04-21;Nova
+332;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1804.0;1943.12;2.0;2017-04-20;Nova
+333;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1803.0;1943.12;2.0;2017-04-18;Nova
+334;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1802.0;1943.12;2.0;2017-04-14;Nova
+335;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1791.0;12630.26;13.0;1801.0;971.56;1.0;2017-04-12;Nova
+336;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1163.0;3847.82;2.0;2017-03-18;Cancelada
+337;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1156.0;2885.87;2.0;2017-03-18;Concluída
+338;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1152.0;2885.87;2.0;2017-03-18;Concluída
+339;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1150.0;2885.87;2.0;2017-03-18;Concluída
+340;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1789.0;2526.05;7.0;1100.0;721.73;2.0;2017-03-21;Concluída
+341;Raphael Nascimento Tavares;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1789.0;2526.05;7.0;537.0;1804.32;5.0;2017-02-25;Concluída
+342;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2179.0;0.00;4.0;2183.0;0.00;1.0;2017-04-07;Em andamento
+343;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2111.0;28726.50;12.0;2112.0;23938.75;10.0;2017-04-29;Nova
+344;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1790.0;7578.16;6.0;1796.0;1263.03;1.0;2017-04-27;Em andamento
+345;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1790.0;7578.16;6.0;1795.0;1263.03;1.0;2017-04-26;Em andamento
+346;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1790.0;7578.16;6.0;1794.0;1263.03;1.0;2017-04-25;Em andamento
+347;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1147.0;7695.65;2.0;1165.0;7695.65;2.0;2017-03-28;Concluída
+348;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1164.0;3847.82;2.0;2017-03-18;Concluída
+349;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1160.0;3847.82;2.0;2017-03-18;Concluída
+350;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1146.0;38478.24;20.0;1158.0;3847.82;2.0;2017-03-18;Concluída
+351;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1154.0;2885.87;2.0;2017-03-18;Cancelada
+352;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1151.0;2885.87;2.0;2017-03-18;Concluída
+353;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1145.0;23086.94;16.0;1149.0;2885.87;2.0;2017-03-18;Concluída
+354;Wellington de Souza Freitas;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1082.0;2129.52;6.0;2017-05-22;Nova
+355;Wellington de Souza Freitas;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1081.0;1774.60;5.0;2017-05-12;Nova
+356;Wellington de Souza Freitas;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1078.0;2484.44;7.0;2017-05-05;Nova
+357;Wellington de Souza Freitas;BFA - Programa Bolsa Família ;1065.0;11357.44;32.0;1077.0;1774.60;5.0;2017-04-26;Nova
+358;Wellington de Souza Freitas;BFA - Programa Bolsa Família ;956.0;24203.11;17.0;967.0;5694.85;4.0;2017-04-14;Nova
+359;Wellington de Souza Freitas;BFA - Programa Bolsa Família ;956.0;24203.11;17.0;966.0;5694.85;4.0;2017-04-10;Nova
+360;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;2111.0;28726.50;12.0;900.0;4787.75;2.0;2017-03-16;Concluída
+361;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1651.0;7343.18;7.0;899.0;3147.07;3.0;2017-03-16;Concluída
+362;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;844.0;0.00;4.0;847.0;0.00;1.0;2017-03-13;Concluída
+363;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;844.0;0.00;4.0;846.0;0.00;3.0;2017-03-11;Concluída
+364;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1726.0;0.00;8.0;673.0;0.00;6.0;2017-03-11;Concluída
+365;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1651.0;7343.18;7.0;507.0;4196.10;4.0;2017-02-23;Concluída
+366;Wellington de Souza Freitas;SIPNI - SISTEMA DE INFORMAÇÕES DO PROGRAMA NACIONAL DE IMUNIZAÇÕES;1726.0;0.00;8.0;494.0;0.00;2.0;2017-02-21;Concluída
