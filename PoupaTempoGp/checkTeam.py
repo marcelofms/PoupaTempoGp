@@ -104,7 +104,7 @@ def publica_prod_consolidada(df_producao):
     df_periodos = df_producao['Entrega']
     df_periodos.apply(lambda d: str(str(d.year) + '-' + str(d.month)))
     df_producao = pd.concat([df_produção,df_periodos], axis=1)
-    # TODO: testar consolidação
+    # TODO: testar consolidação da produção individual
     df_producao.to_csv(str(get_path_output()) + '\prod_rec_consolid.csv', sep=';')
 
 
