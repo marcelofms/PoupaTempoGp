@@ -7,7 +7,6 @@ Created on 27 de mar de 2017
 import sys
 from sys import argv
 import pandas as pd
-import numpy as np
 import os
 
 
@@ -29,8 +28,6 @@ def main(argv):
     print(':::Fim da Execução:::')
 
 
-
-
 def get_dados_redmine(arquivo):
     '''
         retorna um objeto DATAFRAME (Pandas) para pesquisa e manipulação
@@ -46,12 +43,12 @@ def get_dados_redmine(arquivo):
     for index, reg in meus_dados.iterrows():
         # Trata os percentuais inválidos (apenas para estimar valores e evitar distorçoes)
         val_teste = str(reg['Percentual da Fase']).replace(',', '.')
-        if (float(val_teste) > 1):
+        if float(val_teste) > 1:
             print('Percentual tratado ', str((float(val_teste) / 100)).replace('.', ','))
             meus_dados.set_value(index, 'Percentual da Fase', str((float(val_teste) / 100)).replace('.', ','))
         # Trata o valor da Nota para a OS
-        if (str(reg['Tipo']).find('Ordem') >= 0):
-            if (str(reg['Valor da NF-e']).strip() == ''):
+        if str(reg['Tipo']).find('Ordem') >= 0:
+            if str(reg['Valor da NF-e']).strip() == '':
                 meus_dados.set_value(index, 'Valor da NF-e', '0.0')
 
     # remove valores inválidos
@@ -68,16 +65,13 @@ def get_dados_redmine(arquivo):
     return meus_dados
 
 
-
-
-
 def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
     if (
-        (str(dt_ini_tar) and str(dt_fim_tar)) and
-        (str(dt_fim_tar) != 'NaN') and
-        (str(dt_fim_tar) != 'NaN') and
-        (str(dt_ini_tar) != 'NaT') and
-        (str(dt_fim_tar) != 'NaT')
+                            (str(dt_ini_tar) and str(dt_fim_tar)) and
+                            (str(dt_fim_tar) != 'NaN') and
+                        (str(dt_fim_tar) != 'NaN') and
+                    (str(dt_fim_tar) != 'NaT') and
+                (str(dt_fim_tar) != 'NaT')
     ):
         dti_dur_tarefa = pd.bdate_range(dt_ini_tar, dt_fim_tar)
         duracao_dias = dti_dur_tarefa.size
@@ -89,9 +83,6 @@ def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
     return duracao_dias
 
 
-
-
-
 def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
     '''
         lista_completa - dataframe com o sdados importados do csv
@@ -99,7 +90,7 @@ def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
         ind_nivel_origem - string com os caracteres de representação do nível hierarquico '>'
     '''
     # atualiza o nível de busca no indicador
-    str_nivel_atual = ' > ' + ind_nivel_origem
+    str_nivel_atual = '*-' + ind_nivel_origem
 
     # localiza os filhos do nó informado
     df_lista_filtrada = lista_completa.loc[lista_completa['Tarefa principal'] == id_no_pai]
@@ -112,22 +103,22 @@ def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
         for index, filha in df_lista_filtrada.iterrows():
 
             custo_folha = 0
-            if (str(filha['Tipo']).find('Fase') >= 0):
+            if str(filha['Tipo']).find('Fase') >= 0:
                 custo_folha = lista_completa.loc[id_no_pai, 'Valor da NF-e'] * float(
                     str(filha['Percentual da Fase']).replace(',', '.'))
-                print('-- Custo formatado #' + str(index) + ' - ' + str(custo_folha))
+                # print('-- Custo formatado #' + str(index) + ' - ' + str(custo_folha))
             else:
                 custo_folha = filha['Valor da NF-e']
 
             dur_tarefa = calc_duracao_tarefa(filha['Data de início'], filha['Data de fim'])
 
-            # print('Incluindo filha #',index, filha['Assunto'])
+            # print('Incluindo filha ', str(str_nivel_atual + filha['Assunto']))
             df_folhas = df_folhas.append({
                 'info': '',
                 'nome gp': '',
                 'nome projeto': filha['Projeto'],
-                'nome tarefa': str_nivel_atual + filha['Assunto'],
-                '% concluída': str(int(filha['% Completo'])),
+                'nome tarefa': str(str_nivel_atual + filha['Assunto']),
+                '% concluída': str(str(int(filha['% Completo'])) + '%'),
                 'predecessora': '',
                 'status da demanda': filha['Estado'],
                 'duração': str(int(dur_tarefa)),
@@ -141,19 +132,10 @@ def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
 
             # Busca recursiva dos demais elementos
             df_sub_folhas = get_folhas_cronograma(lista_completa, index, str_nivel_atual)
-            if (df_sub_folhas.empty == False):
+            if df_sub_folhas.empty == False:
                 df_folhas = df_folhas.append(df_sub_folhas)
 
-
-                # print('Filhos do nó #',id_no_pai)
-                # print(df_folhas)
-
     return df_folhas  # retorna a estrutura de folhas do nó informado como parâmetro
-
-
-'''
----------------------------------------------------------------------------------
-'''
 
 
 def cria_layout_cronograma():
@@ -180,11 +162,6 @@ def cria_layout_cronograma():
     return df_header
 
 
-'''
----------------------------------------------------------------------------------
-'''
-
-
 def get_path_output():
     # testa se a app é script ou frozen exe
     if getattr(sys, 'frozen', False):
@@ -195,11 +172,6 @@ def get_path_output():
     # trata a execução em desenv
     path_dir_saida = str(path_dir_saida).replace('\\src', '')
     return str(path_dir_saida)
-
-
-'''
----------------------------------------------------------------------------------
-'''
 
 
 def monta_cronograma(df: pd.DataFrame):
@@ -220,7 +192,7 @@ def monta_cronograma(df: pd.DataFrame):
                 'nome gp': '',
                 'nome projeto': linha['Projeto'],
                 'nome tarefa': linha['Assunto'],
-                '% concluída': str(int(linha['% Completo'])),
+                '% concluída': str(str(int(linha['% Completo'])) + '%'),
                 'predecessora': '',
                 'status da demanda': linha['Estado'],
                 'duração': '',
@@ -229,13 +201,13 @@ def monta_cronograma(df: pd.DataFrame):
                 'nome dos recursos': linha['Atribuído a'],
                 'custo': linha['Valor da NF-e'],
                 'número da demanda': str(int(index)),
-                'Tipo de demanda':linha['Tipo']
+                'Tipo de demanda': linha['Tipo']
             }, ignore_index=True)
 
             # print('Adicionando folhas da OS #',index)
             df_folhas = get_folhas_cronograma(df, index, '')
 
-            if (df_folhas.empty == False):
+            if df_folhas.empty == False:
                 df_cronograma = df_cronograma.append(df_folhas)
 
     print('Cronograma montado..')
@@ -258,20 +230,6 @@ def monta_cronograma(df: pd.DataFrame):
     ])
     return df_cronograma
 
-
-'''
----------------------------------------------------------------------------------
-'''
-
-
-def reg_log(strlog, tplog):
-    if (True):
-        print(strlog)
-
-
-'''
----------------------------------------------------------------------------------
-'''
 
 if __name__ == '__main__':
     main(argv)

@@ -24,7 +24,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="checkAlocacao.py" />
     <Compile Include="checkTeam.py" />
+    <Compile Include="montaMapaOS.py" />
     <Compile Include="redmine2project.py" />
     <Compile Include="showMoney.py" />
   </ItemGroup>

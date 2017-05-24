@@ -14,6 +14,7 @@ def main(argv):
     print(':::Início da execução:::')
     print('Parametros de execução:', sys.argv)
 
+    # TODO: incluir crítica para número de parâmetros inválido
 
     if str(sys.argv).find('csv'):
         meusDados = get_dados_redmine(sys.argv[1])
@@ -121,6 +122,8 @@ def get_status_fase(df_dados, id_fase, status_nominal):
                 str_status = 'Entrega Antecipada'
             else:
                 str_status = 'Planejada'
+    elif status_nominal.find('Concluida') >= 0:
+        str_status = 'Concluída'
     else:
         str_status = 'Em Andamento'
 
@@ -130,7 +133,7 @@ def get_status_fase(df_dados, id_fase, status_nominal):
 def publica_faturamento(df_dados):
     print('Analisando Faturamento')
     # Preparar dataframe dos itens faturáveis válidos
-    df_itens_fat = df_dados.loc[((df_dados['Tipo'] == 'Fase') & (df_dados['Data de fim']))]
+    df_itens_fat = df_dados.loc[((df_dados['Tipo'] == 'Fase') & (df_dados['Estado'] != 'Cancelada') & (df_dados['Data de fim']))]
     # Cria o DF para plotagem dos dados
     df_plot_faturamento = pd.DataFrame(columns={'Projeto',
                                                 'Fase',
