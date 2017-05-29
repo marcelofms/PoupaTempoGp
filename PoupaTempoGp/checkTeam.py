@@ -27,7 +27,6 @@ def show_producao_per_recurso(dados_prod):
                                                     'Esforco_produto',
                                                     'Entrega',
                                                     'Status'])
-    ####
 
     df_fases = dados_prod.loc[dados_prod['Tipo'] == 'Fase']  # Lista todas as fases
     df_valores_fase = pd.DataFrame(columns=['Projeto', 'OS', 'Fase', 'Esforco', 'Valor', 'Entrega'])
@@ -103,8 +102,8 @@ def show_producao_per_recurso(dados_prod):
 
     ''' versão agrupada dos dados '''
     publica_prod_consolidada(df_producao_per_recurso)
-    publica_prod_consolidada_por_os(df_producao_per_recurso)
     publica_prod_semanal_consolid(df_producao_per_recurso)
+    publica_prod_consolidada_por_os(df_producao_per_recurso)
 
 
 def publica_prod_consolidada_por_os(df_producao):
