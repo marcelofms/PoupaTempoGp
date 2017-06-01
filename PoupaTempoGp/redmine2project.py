@@ -90,7 +90,7 @@ def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
         ind_nivel_origem - string com os caracteres de representação do nível hierarquico '>'
     '''
     # atualiza o nível de busca no indicador
-    str_nivel_atual = '*-' + ind_nivel_origem
+    str_nivel_atual = '->' + ind_nivel_origem
 
     # localiza os filhos do nó informado
     df_lista_filtrada = lista_completa.loc[lista_completa['Tarefa principal'] == id_no_pai]
