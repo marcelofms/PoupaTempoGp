@@ -83,14 +83,15 @@ def calc_duracao_tarefa(dt_ini_tar, dt_fim_tar):
     return duracao_dias
 
 
-def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
+def get_folhas_cronograma(lista_completa, id_no_pai, str_nivel_origem, num_nivel_origem):
     '''
         lista_completa - dataframe com o sdados importados do csv
         id_no_pai - index do nó/antecessor origem da busca
         ind_nivel_origem - string com os caracteres de representação do nível hierarquico '>'
     '''
     # atualiza o nível de busca no indicador
-    str_nivel_atual = '->' + ind_nivel_origem
+    str_nivel_atual = '->' + str_nivel_origem
+    num_nivel_atual = num_nivel_origem + 1
 
     # localiza os filhos do nó informado
     df_lista_filtrada = lista_completa.loc[lista_completa['Tarefa principal'] == id_no_pai]
@@ -119,7 +120,7 @@ def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
                 'nome projeto': filha['Projeto'],
                 'nome tarefa': str(str_nivel_atual + filha['Assunto']),
                 '% concluída': str(str(int(filha['% Completo'])) + '%'),
-                'predecessora': '',
+                'Predecessoras': filha['Tarefas relacionadas'],
                 'status da demanda': filha['Estado'],
                 'duração': str(int(dur_tarefa)),
                 'início': filha['Data de início'],
@@ -127,11 +128,12 @@ def get_folhas_cronograma(lista_completa, id_no_pai, ind_nivel_origem):
                 'nome dos recursos': filha['Atribuído a'],
                 'custo': '{:,.2f}'.format(custo_folha),
                 'número da demanda': str(int(index)),
-                'Tipo de demanda': ''
+                'Tipo de demanda': '',
+                'Nivel Hierarquia': num_nivel_atual
             }, ignore_index=True)
 
             # Busca recursiva dos demais elementos
-            df_sub_folhas = get_folhas_cronograma(lista_completa, index, str_nivel_atual)
+            df_sub_folhas = get_folhas_cronograma(lista_completa, index, str_nivel_atual, num_nivel_atual)
             if df_sub_folhas.empty == False:
                 df_folhas = df_folhas.append(df_sub_folhas)
 
@@ -148,7 +150,7 @@ def cria_layout_cronograma():
         'nome projeto',
         'nome tarefa',
         '% concluída',
-        'predecessora',
+        'Predecessoras',
         'status da demanda',
         'duração',
         'início',
@@ -156,7 +158,8 @@ def cria_layout_cronograma():
         'nome dos recursos',
         'custo',
         'número da demanda',
-        'Tipo de demanda'
+        'Tipo de demanda',
+        'Nivel Hierarquia'
     ])
 
     return df_header
@@ -174,6 +177,45 @@ def get_path_output():
     return str(path_dir_saida)
 
 
+def get_num_precedencia(str_relac):
+    str_prec = ''
+    ls_pred = []
+    if str(str_relac).find("segue") >= 0:
+        if str(str_relac).find(",") >= 0:
+            ls_rel = str(str_relac).split(',')
+            # tratar lista de precedencias
+            for itl in ls_rel:
+                if str(itl).find('segue') >= 0:
+                    ls_pred.append(str(itl).replace('segue #', ''))
+        else:
+            ls_pred.append(str(str_relac).replace('segue #', ''))
+
+    return ls_pred
+
+
+def update_predecessoras(df_crono: pd.DataFrame):
+    ###   Atualiza a relação de precedencia dos cronogramas
+    df_iter = df_crono
+    for index, item in df_iter.iterrows():
+        ids_predec = ''
+        if str(item['Predecessoras']).find("segue") >= 0:
+            ls_predec = get_num_precedencia(item['Predecessoras'])
+            
+            # monta a lista de predecessoras
+            # TODO: corrigir falha em múltiplas predecessoras
+            for el in ls_predec:
+                if not df_crono[df_crono['número da demanda'] == el].empty:
+                    ids_predec = str(ids_predec + str(df_crono[df_crono["número da demanda"] == el].index[0]) + ',')
+
+            # remove a virgula do final da lista
+            if ids_predec[-1:] == ',':
+                ids_predec == ids_predec[:-1]
+
+        df_crono.set_value(index, 'Predecessoras', ids_predec)
+
+    return df_crono
+    
+
 def monta_cronograma(df: pd.DataFrame):
     print('Iniciando montagem do cronograma')
     # cria novo objeto para receber os dados ordenados
@@ -181,6 +223,26 @@ def monta_cronograma(df: pd.DataFrame):
 
     # Localiza as ordens de serviço existentes
     df_ord_projeto = df.sort_values(['Projeto', 'Criado'], ascending=[1, 1])
+
+    # Cria a linha de abertura (Index 0)
+    df_cronograma = df_cronograma.append({
+                'info': '',
+                'nome gp': '',
+                'nome projeto': '',
+                'nome tarefa': '',
+                '% concluída': '',
+                'Predecessoras': '',
+                'status da demanda': '',
+                'duração': '',
+                'início': '',
+                'término': '',
+                'nome dos recursos': '',
+                'custo': '',
+                'número da demanda': '',
+                'Tipo de demanda': '',
+                'Nivel Hierarquia': ''
+    }, ignore_index=True)
+
 
     for index, linha in df_ord_projeto.iterrows():
 
@@ -193,7 +255,7 @@ def monta_cronograma(df: pd.DataFrame):
                 'nome projeto': linha['Projeto'],
                 'nome tarefa': linha['Assunto'],
                 '% concluída': str(str(int(linha['% Completo'])) + '%'),
-                'predecessora': '',
+                'Predecessoras': '',
                 'status da demanda': linha['Estado'],
                 'duração': '',
                 'início': linha['Data de início'],
@@ -201,14 +263,18 @@ def monta_cronograma(df: pd.DataFrame):
                 'nome dos recursos': linha['Atribuído a'],
                 'custo': linha['Valor da NF-e'],
                 'número da demanda': str(int(index)),
-                'Tipo de demanda': linha['Tipo']
+                'Tipo de demanda': linha['Tipo'],
+                'Nivel Hierarquia': 1
             }, ignore_index=True)
 
             # print('Adicionando folhas da OS #',index)
-            df_folhas = get_folhas_cronograma(df, index, '')
+            df_folhas = get_folhas_cronograma(df, index, '', 1)
 
             if df_folhas.empty == False:
                 df_cronograma = df_cronograma.append(df_folhas)
+
+    # Atualiza predecedencia no cronograma -- Em construção
+    df_cronograma = update_predecessoras(df_cronograma)
 
     print('Cronograma montado..')
     dir_saida = str(get_path_output() + '\\cronograma.csv')
@@ -218,7 +284,7 @@ def monta_cronograma(df: pd.DataFrame):
         'nome projeto',
         'nome tarefa',
         '% concluída',
-        'predecessora',
+        'Predecessoras',
         'status da demanda',
         'duração',
         'início',
@@ -226,7 +292,8 @@ def monta_cronograma(df: pd.DataFrame):
         'nome dos recursos',
         'custo',
         'número da demanda',
-        'Tipo de demanda'
+        'Tipo de demanda',
+        'Nivel Hierarquia'
     ])
     return df_cronograma
 

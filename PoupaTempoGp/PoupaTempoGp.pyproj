@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ca88a4f6-b871-4dac-82d5-b47c75b2ddc8</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>montaMapaOS.py</StartupFile>
+    <StartupFile>redmine2project.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
