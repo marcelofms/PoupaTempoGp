@@ -129,7 +129,7 @@ def get_folhas_cronograma(lista_completa, id_no_pai, str_nivel_origem, num_nivel
                 'custo': '{:,.2f}'.format(custo_folha),
                 'número da demanda': str(int(index)),
                 'Tipo de demanda': '',
-                'Nivel Hierarquia': num_nivel_atual
+                'Nivel Hierarquia': str(int(num_nivel_atual))
             }, ignore_index=True)
 
             # Busca recursiva dos demais elementos
@@ -193,25 +193,38 @@ def get_num_precedencia(str_relac):
     return ls_pred
 
 
+def get_index_elem_crono(criter, df_pesquisado):
+    str_idx = ''
+    if not df_pesquisado.empty:
+        str_idx = str(df_pesquisado[df_pesquisado["número da demanda"] == criter].index[0])
+    return str_idx
+
+
 def update_predecessoras(df_crono: pd.DataFrame):
     ###   Atualiza a relação de precedencia dos cronogramas
     df_iter = df_crono
     for index, item in df_iter.iterrows():
         ids_predec = ''
+        str_predecs  = ''
         if str(item['Predecessoras']).find("segue") >= 0:
             ls_predec = get_num_precedencia(item['Predecessoras'])
             
             # monta a lista de predecessoras
             # TODO: corrigir falha em múltiplas predecessoras
-            for el in ls_predec:
-                if not df_crono[df_crono['número da demanda'] == el].empty:
-                    ids_predec = str(ids_predec + str(df_crono[df_crono["número da demanda"] == el].index[0]) + ',')
+            #for el in ls_predec:
+                #if not df_crono[df_crono['número da demanda'] == el].empty:
+                    #ids_predec = str(ids_predec + get_index_elem_crono(el, df_crono) + ',')
+                    #ids_predec = str(ids_predec + str(df_crono[df_crono["número da demanda"] == el].index[0]) + ',')
+
+            ids_predec = df_crono[df_crono["número da demanda"].isin(ls_predec)].index.values.tolist()
+
+            str_predecs = str(ids_predec).strip('[]')
 
             # remove a virgula do final da lista
-            if ids_predec[-1:] == ',':
-                ids_predec == ids_predec[:-1]
+            if str_predecs[-1:] == ',':
+                str_predecs = str_predecs[:-1]
 
-        df_crono.set_value(index, 'Predecessoras', ids_predec)
+        df_crono.set_value(index, 'Predecessoras', str_predecs)
 
     return df_crono
     
