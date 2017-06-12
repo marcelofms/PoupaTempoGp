@@ -158,8 +158,6 @@ def publica_faturamento(df_dados):
              'Status Atv': str_status_fase}
             , ignore_index=True)
 
-        #
-
     df_plot_faturamento.fillna(method='ffill', inplace=True) # remove valores inválidos
 
     # publica a apuração base

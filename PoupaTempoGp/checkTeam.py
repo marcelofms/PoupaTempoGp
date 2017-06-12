@@ -8,6 +8,19 @@ import sys
 import pandas as pd
 import os
 
+def publica_itens_nao_faturaveis(df_itens: pd.DataFrame, df_dados: pd.DataFrame):
+    df_zerado = pd.DataFrame()
+    df_ordens = pd.DataFrame()
+    df_merge = pd.DataFrame()
+    df_zerado = df_itens.loc[df_itens['Valor_produto'] == '0.00']
+    if not df_zerado.empty:
+        # Publica a lista de itens não faturáveis/sem valor
+        df_ordens = df_dados.iloc[:,0:2]
+        df_merge = df_ordens.join(df_zerado.set_index('OS'), how='inner', lsuffix='_ordem', rsuffix='_item')
+        df_merge['Entrega'] = df_merge['Entrega'].apply(lambda d: str(str(d.year) + '-' + str(d.month)))
+        df_merge = df_merge.groupby(['Projeto_item', 'Tipo', 'Recurso', 'Entrega'])['Esforco_produto'].sum()
+        df_merge.to_csv(str(get_path_output()) + '\itens_não_faturaveis_detalhe.csv', sep=';')
+       
 
 def show_producao_per_recurso(dados_prod):
     print('Calculando produção individual...')
@@ -100,10 +113,13 @@ def show_producao_per_recurso(dados_prod):
     ''' Publica produção por recurso detalhada '''
     df_producao_per_recurso.to_csv(str(get_path_output()) + '\producao_recursos_detalhe.csv', sep=';')
 
+    # publicação do esforço em atividades não faturáveis
+    publica_itens_nao_faturaveis(df_producao_per_recurso, dados_prod)
+
     ''' versão agrupada dos dados '''
     publica_prod_consolidada(df_producao_per_recurso)
     publica_prod_semanal_consolid(df_producao_per_recurso)
-    publica_prod_consolidada_por_os(df_producao_per_recurso)
+    # publica_prod_consolidada_por_os(df_producao_per_recurso)
 
 
 def publica_prod_consolidada_por_os(df_producao):
