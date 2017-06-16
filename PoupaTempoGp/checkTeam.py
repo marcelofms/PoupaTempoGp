@@ -119,7 +119,37 @@ def show_producao_per_recurso(dados_prod):
     ''' versão agrupada dos dados '''
     publica_prod_consolidada(df_producao_per_recurso)
     publica_prod_semanal_consolid(df_producao_per_recurso)
+    publica_prod_planejamento_por_os(df_producao_per_recurso)
     # publica_prod_consolidada_por_os(df_producao_per_recurso)
+
+
+def publica_prod_planejamento_por_os(df_producao):
+    print('Consolidando pivot OS/Periodo...')
+
+    df_producao['Entrega'] = df_producao['Entrega'].apply(lambda d: str(str(d.year) + '-' + str(d.month)))
+    
+    df_producao_os = pd.DataFrame(columns={'OS', 'Entrega', 'Valor'})
+
+    # consolida os valores por periodo
+    for item, linha in df_producao.groupby(['OS', 'Entrega']):
+        # filtra os dados do projeto/periodo
+
+        df_itens = df_producao.loc[(df_producao["OS"] == item[0]) &
+                                   (df_producao["Entrega"] == item[1])]
+        val_consolidado = 0
+        for index, it_periodo in df_itens.iterrows():
+            val_consolidado += (float(it_periodo['Valor_produto']) * 100)
+
+                # preenche o dataframe
+        df_producao_os = df_producao_os.append({'OS': item[0],
+                                                'Entrega': item[1],
+                                                'Valor': val_consolidado / 100},
+                                                ignore_index=True)
+
+    df_pivot_os = pd.pivot_table(df_producao_os, index=['OS'], columns='Entrega')
+    df_pivot_os.fillna(0, inplace=True)
+    df_pivot_os.to_csv(str(get_path_output()) + '\pivot_os_prod_periodo.csv', sep=';')
+    
 
 
 def publica_prod_consolidada_por_os(df_producao):
@@ -127,7 +157,7 @@ def publica_prod_consolidada_por_os(df_producao):
 
     df_periodos = pd.DataFrame(columns=['Periodo_entrega'])
     df_periodos['Periodo_entrega'] = df_producao['Entrega'].apply(lambda d: str(str(d.year) + '-' + str(d.month)))
-    df_producao = pd.concat([df_producao, df_periodos], axis=1)
+    df_periodos = pd.concat([df_producao, df_periodos], axis=1)
 
     ''' cria registro consolidado '''
     new_columns = ['Recurso', 'Projeto', 'OS', 'Periodo_entrega', 'Valor', 'Status']
