@@ -12,8 +12,8 @@
     <Name>PoupaTempoGp</Name>
     <RootNamespace>PoupaTempoGp</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>C:\Trabalho\projetos\PoupaTempoGp\issues.csv C:\Trabalho\projetos\</CommandLineArguments>
-    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <CommandLineArguments>D:\marce\Projetos\PoupaTempoGp\issues.csv D:\marce\Projetos\</CommandLineArguments>
+    <EnableNativeCodeDebugging>True</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

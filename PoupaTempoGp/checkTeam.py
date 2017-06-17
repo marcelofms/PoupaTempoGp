@@ -120,7 +120,37 @@ def show_producao_per_recurso(dados_prod):
     publica_prod_consolidada(df_producao_per_recurso)
     publica_prod_semanal_consolid(df_producao_per_recurso)
     publica_prod_planejamento_por_os(df_producao_per_recurso)
+    publica_velocidade_recursos(df_producao_per_recurso)
     # publica_prod_consolidada_por_os(df_producao_per_recurso)
+
+
+def publica_velocidade_recursos(df_producao_recurso: pd.DataFrame):
+    print('Calculando velocidade média...')
+    df_in = df_producao_recurso
+    # monta o dataframe de agregação
+    df_veloc = pd.DataFrame(columns={'Recurso', 'Valor_entregas', 'Esforco', 'Velocidade'})
+
+    # consolida os valores de cada recurso
+    for item, linha in df_in.groupby(['Recurso']):
+        # filtra os dados do recurso
+
+        df_itens = df_producao_recurso.loc[(df_producao_recurso["Recurso"] == item)]
+        val_consolidado = 0
+        esforco_consolid = 0
+        
+        if not df_itens.empty:
+            for index, it_rec in df_itens.iterrows():
+                val_consolidado += (float(it_rec['Valor_produto']) * 100)
+                esforco_consolid += float(it_rec['Esforco_produto'])
+
+            # preenche o dataframe
+            df_veloc = df_veloc.append({'Recurso': item,
+                                        'Valor_entregas': val_consolidado / 100,
+                                        'Esforco': esforco_consolid,
+                                        'Velocidade': (val_consolidado / 100)/esforco_consolid},
+                                        ignore_index=True)
+
+    df_veloc.to_csv(str(get_path_output()) + '\\recursos_velocidade_media.csv', sep=';')
 
 
 def publica_prod_planejamento_por_os(df_producao):
