@@ -51,12 +51,13 @@ def show_producao_per_recurso(dados_prod):
         custo_folha = dados_prod.loc[i_fase['Tarefa principal'], 'Valor da NF-e'] * float(str(i_fase['Percentual da Fase']).replace(',', '.'))
 
         ''' Calcula esforço total (soma do esforço dos produtos da fase) '''
-        df_prods = dados_prod.loc[(dados_prod['Tipo'] == 'Produto') & (dados_prod['Tarefa principal'] == index)] 
+        df_prods = dados_prod.loc[(dados_prod['Tipo'].isin(['Produto', 'Atividade'])) & (dados_prod['Tarefa principal'] == index) & (dados_prod['Estado'] != 'Cancelada')] 
         esforco_total = 0
 
         if not df_prods.empty:
             for idx, i_prod in df_prods.iterrows():
-                esforco_total += int(calc_duracao_tarefa(i_prod['Data de início'], i_prod['Data de fim']))
+                if i_prod['Estado']!='Cancelada':
+                    esforco_total += int(calc_duracao_tarefa(i_prod['Data de início'], i_prod['Data de fim']))
 
             df_valores_fase = df_valores_fase.append({'Projeto': i_fase['Projeto'],
                                     'OS': num_os,
